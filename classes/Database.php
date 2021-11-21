@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Database connection class.
+ */
 class Database {
 
     public static $host = "localhost";
