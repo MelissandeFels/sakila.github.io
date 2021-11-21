@@ -2,7 +2,7 @@
 
 Explication du projet : <br>
 Ce projet est dans le cadre d'un examen professionnel continu dans la formation Développement Web et Web mobile.<br>
-Le but est de réaliser un site qui propose la consultation et la réservation de films.<br>
+Le but est de réaliser un site qui propose la consultation et la réservation de films.
 <br><br>
 Les outils utilisés :<br>
 PHP, MySQL Workbench, Bootstrap, Visual Studio
