@@ -35,6 +35,6 @@ Ce que je souhaite améliorer ?<br>
 <br><br>
 Difficultés rencontrées :<br>
 La compréhension de la base de données 'Sakila' fournit, fut complexe. Cette partie est considérée comme essentielle à la mise en oeuvre du site. Cela m'a pris pas mal de temps à comprendre.<br>
-La création du site devait correspondre avec la structure de la base. Cette partie fut complexe dans le sens où il fallait décider à quel moment je vais retrouver l'identifiant utilisateur (customer_id) sur le site, l'identifiant de l'inventaire (inventory_id), le magasin (store_id) et ainsi de suite. Par ailleurs, la conception du site pourait être améliorée dans une nouvelle version (à voir).
+La création du site devait correspondre avec la structure de la base. Cette partie fut complexe dans le sens où il fallait décider à quel moment je vais retrouver l'identifiant du client (customer_id) sur le site, l'identifiant du staff (staff_id), l'identifiant de l'inventaire (inventory_id), le magasin (store_id) et ainsi de suite. Par ailleurs, la conception du site pourrait être améliorée dans une nouvelle version (à voir).
 <br><br>
 Je vous remercie de votre attention.
