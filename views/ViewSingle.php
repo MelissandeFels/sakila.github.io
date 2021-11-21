@@ -1,7 +1,7 @@
 <?php 
 
 // view for one film
-// this view appears when you click 'See' button in index.php
+// this view appears when you click 'See' button in index.php (in progress)
 
 require_once('./views/parts/header.php'); 
 require_once('controllers/Home.php');

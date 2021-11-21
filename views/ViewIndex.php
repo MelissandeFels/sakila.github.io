@@ -1,6 +1,6 @@
 <?php
 
-// entry point, index.php
+// entry point, index.php (or home)
 
 require_once('controllers/Login.php');
 

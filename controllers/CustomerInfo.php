@@ -6,13 +6,22 @@ require_once('classes/LightAddress.php');
 /**
  * CustomerInfo class for ViewCustomerInfo in route 'customers'
  * using Customer class and extends controller.
- * @author Melissande Fels
+ * 
  */
 class CustomerInfo extends Controller {
 
+    /**
+     * Empty array results.
+     */
     public $results = [];
+    /**
+     * Empty array addresses.
+     */
     public $addresses = [];
 
+    /**
+     * Function to get all customers from db in the store.
+     */
     public static function customersFromDB($storeId) {
 
         $results = null;
@@ -32,6 +41,9 @@ class CustomerInfo extends Controller {
 
     }
 
+    /**
+     * Function to get all addresses from db (in progress).
+     */
     public static function addressFromDB() {
 
         $addresses = null;
@@ -49,6 +61,9 @@ class CustomerInfo extends Controller {
         return $addresses;
     }
 
+    /**
+     * Function insert customer into db (in progress).
+     */
     public static function insertCustomerInfoIntoDB() {
 
         $today = date("Y-m-d H:i:s");

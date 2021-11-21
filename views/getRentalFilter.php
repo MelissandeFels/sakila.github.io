@@ -1,6 +1,6 @@
 <?php
 
-// get rental films of this customer
+// return result of filter for rental film in ViewRentalFilter
 
 require_once('controllers/RentalFilter.php');
 require_once('./views/parts/header.php');

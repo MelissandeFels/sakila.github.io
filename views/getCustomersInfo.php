@@ -1,6 +1,6 @@
 <?php
 
-// get rental films of this customer
+// get customers info in this store in ViewCustomersInfo
 
 require_once('controllers/CustomerInfo.php');
 require_once('./views/parts/header.php');

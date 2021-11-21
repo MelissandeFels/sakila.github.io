@@ -1,8 +1,15 @@
 <?php
 require_once('controllers/Controller.php');
 
+/**
+ * RentalFilter class to filter rental by creation date and return date.
+ * For ViewRentalFilter
+ */
 class RentalFilter extends Controller {
 
+    /**
+     * Function rental filter by date in store.
+     */
     public static function rentalFilterByDate($storeId) {
 
         $values = null;

@@ -4,12 +4,27 @@ require_once('classes/LightStaff.php');
 require_once('classes/LightCustomer.php');
 require_once('classes/LightInventory.php');
 
+/**
+ * Reserve class for ViewReserve.
+ */
 class Reserve extends Controller {
 
+    /**
+     *  Empty array staffs.
+     */
     public $staffs = [];
+    /**
+     * Empty array customers.
+     */
     public $customers = [];
+    /**
+     * Empty array inventory.
+     */
     public $inventory = [];
-
+    
+    /**
+     * Function to get staff from db in store.
+     */
     public static function staffFromDB($storeId) {
         $req = "SELECT staff.staff_id, staff.first_name, staff.last_name, store.store_id, store.manager_staff_id FROM staff
         JOIN store ON store.store_id = staff.store_id
@@ -24,6 +39,9 @@ class Reserve extends Controller {
         return $staffs;
     }
 
+    /**
+     * Function to get customers from db in store.
+     */
     public static function customerFromDB($storeId) {
         $req = "SELECT customer.*, store.store_id FROM sakila.customer
         JOIN store ON store.store_id = customer.store_id
@@ -38,6 +56,9 @@ class Reserve extends Controller {
         return $customers;
     }
 
+    /**
+     * Function to get inventory from db in store and by film id.
+     */
     public static function inventoryFromDB($storeId, $filmId) {
         $req = "SELECT DISTINCT inventory.inventory_id, film.film_id, store.store_id FROM inventory
         JOIN film ON film.film_id = inventory.film_id
@@ -54,6 +75,9 @@ class Reserve extends Controller {
         return $inventory;
     }
 
+    /**
+     * Function to insert rental film in db.
+     */
     public static function insertDataIntoDB() {
            
         $rental_date=$_POST['rental_date'];

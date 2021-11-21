@@ -29,6 +29,7 @@ Ce que je souhaite améliorer ?<br>
 - Vérification de l'identifiant et du mot de passe : en fonction des données de la base lors de l'authentification, je souhaite comparer les informations entrées dans les champs de saisies et les informations en base de données afin de rendre le site plus sécurisé.<br>
 - Une option 'Inscription' : au site par le client (ou le staff si nouveau dans un magasin).
 - La date de retour : lors de l'insertion d'une réservation, la date de retour ('return_date') me renvoie ceci '2021-11-23 00:00:00'. Cela est en voie de modification.<br>
+- Les 'select option' de la vue de réservation d'un film : je souhaite effectuer des conditions qui bloquent la sélection du même identifiant.<br>
 - Les boutons 'add(+), supp(x), update(/..)' de la vue 'Customers information' : ils sont en cours de modifications et ne sont pas fonctionnels pour le moment. Je récupère seulement les clients dans cette vue.<br>
 <br><br>
 Difficultés rencontrées :<br>

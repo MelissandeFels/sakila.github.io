@@ -1,6 +1,6 @@
 <?php
 
-// checkout rental films of customer
+// filter rental films of customer by dates
 
 session_start();
 require_once('controllers/RentalFilter.php');

@@ -5,7 +5,7 @@ require_once('classes/Film.php');
 /**
  * Home class for ViewIndex and ViewHome 
  * using Film class and extends controller.
- * @author Melissande Fels
+ * 
  */
 class Home extends Controller {
 

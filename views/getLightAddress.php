@@ -1,5 +1,7 @@
 <?php
 
+// get light data of address in this store for ViewCustomersInfo (form add)
+
 require_once('./views/parts/header.php');
 
 ?>

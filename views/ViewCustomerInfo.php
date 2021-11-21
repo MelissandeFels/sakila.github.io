@@ -1,6 +1,6 @@
 <?php
 
-// see customers info and update
+// see customers info and update (in progress)
 
 session_start();
 require_once('controllers/CustomerInfo.php');

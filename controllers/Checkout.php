@@ -2,12 +2,23 @@
 require_once('controllers/Controller.php');
 require_once('classes/Rental.php');
 
+/**
+ * Checkout classe extends controller.
+ * This class is related with ViewCheckout.
+ */
 class Checkout extends Controller {
 
+    /**
+     * Empty array of rentals.
+     */
     public $rentals = [];
 
+    /**
+     * Function to get all rentals from db.
+     */
     public static function rentalFromDB($storeId) {
-
+        
+        // define format date
         $today = date("Y-m-d H:i:s");
         $rentals = null;
 
@@ -31,8 +42,12 @@ class Checkout extends Controller {
         return $rentals;
     }
 
+    /**
+     * Function to calculate rental rate of all rentals.
+     */
     public static function sumOfRentalRate($storeId) {
 
+        // define format date
         $today = date("Y-m-d H:i:s");
         $sum = null;
 
@@ -56,6 +71,9 @@ class Checkout extends Controller {
         echo $sum;
     }
 
+    /**
+     * Function to delete a row.
+     */
     public static function deleteRowIntoDB($rental_id) {
         $stmt = self::connect()->prepare("DELETE FROM sakila.rental where rental_id = '$rental_id'");
         $stmt->execute();

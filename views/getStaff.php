@@ -1,6 +1,6 @@
 <?php 
 
-// View to return staff of this store
+// View to return staff of this store in a select option in ViewReserve
 
 require_once('controllers/Reserve.php');
 
